@@ -36,11 +36,11 @@ const Education = () => {
     },
     {
       degree: 'Higher Secondary Education',
-      institution: 'GGSP School',
+      institution: 'Guru Gobind Singh Public School',
       duration: '2016 - 2018',
       location: 'Bokaro, Jharkhand',
       status: 'Completed',
-      description: 'Science stream with mathematics, focusing on analytical and problem-solving skills.',
+      description: 'Science stream with mathematics and Computer Science, focusing on analytical and problem-solving skills.',
       highlights: [
         'Mathematics & Physics',
         'Logical Reasoning',

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "./App.css";
+import "./styles/portfolio.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
 import Portfolio from "./components/Portfolio";

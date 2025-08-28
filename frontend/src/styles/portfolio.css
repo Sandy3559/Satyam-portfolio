@@ -31,6 +31,49 @@
   --neutral-light: #dfddd6;
 }
 
+* Light Mode Colors */
+.light {
+  --bg-page: #dfddd6;
+  --bg-card: #f5f5f0;
+  --bg-light: #ffffff;
+  
+  --text-primary: #1a1c1b;
+  --text-secondary: #4a4a40;
+  --text-muted: #888680;
+  --text-inverse: #dfddd6;
+  
+  --border-light: rgba(63, 72, 22, 0.2);
+  --border-medium: rgba(63, 72, 22, 0.4);
+  --border-strong: #3f4816;
+  
+  --brand-primary: #3f4816;
+  --brand-hover: rgba(63, 72, 22, 0.8);
+  --brand-active: rgba(63, 72, 22, 0.6);
+  
+  --secondary-olive: #d9fb06;
+  --secondary-yellow: #f8d47a;
+  --secondary-blue: #0073e6;
+}
+
+/* Dynamic Theme Variables */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark {
+  --current-bg-page: var(--bg-page);
+  --current-bg-card: var(--bg-card);
+  --current-text-primary: var(--text-primary);
+  --current-text-secondary: var(--text-secondary);
+}
+
+:not(.dark) {
+  --current-bg-page: var(--bg-light);
+  --current-bg-card: var(--bg-card);
+  --current-text-primary: var(--text-primary);
+  --current-text-secondary: var(--text-secondary);
+} 
+
 /* Typography System */
 body {
   font-family: 'Inter', Arial, sans-serif;

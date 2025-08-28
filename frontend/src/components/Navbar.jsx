@@ -50,7 +50,7 @@ const Navbar = ({ darkMode, setDarkMode }) => {
             className="text-2xl font-black text-primary-lime cursor-pointer"
             onClick={() => scrollToSection('#home')}
           >
-            SATYAM RAJ
+            SATYAM
           </motion.div>
 
           {/* Desktop Menu */}
