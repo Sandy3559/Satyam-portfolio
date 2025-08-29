@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, Sparkles, Brain, FileText, Ticket } from 'lucide-react';
+import { ExternalLink, Github, Sparkles } from 'lucide-react';
 
 const Projects = () => {
   const projects = [
@@ -15,7 +15,7 @@ const Projects = () => {
         'Firebase authentication and secure user management'
       ],
       tech: ['Next.js', 'Prisma', 'PostgreSQL', 'Tailwind CSS', 'ShadcnUI', 'Firebase'],
-      icon: Brain,
+      screenshot: '/ElevateAI.png', // Reference to your screenshot in the public folder
       github: 'https://github.com/Sandy3559/Elevate-ai',
       live: 'https://elevate-ai-rho.vercel.app/',
       gradient: 'from-lime-primary/20 to-olive-dark/40'
@@ -31,7 +31,7 @@ const Projects = () => {
         'Secure authentication and data protection'
       ],
       tech: ['Next.js', 'Convex', 'Tailwind CSS', 'Authentication'],
-      icon: FileText,
+      screenshot: '/ClariNotes.png', // Reference to your screenshot in the public folder
       github: 'https://github.com/Sandy3559/ClariNotes',
       live: 'https://clari-notes.vercel.app/',
       gradient: 'from-olive-dark/30 to-lime-primary/20'
@@ -47,7 +47,7 @@ const Projects = () => {
         'Advanced analytics and reporting dashboards'
       ],
       tech: ['React 19', 'Tailwind CSS', 'DaisyUI', 'MongoDB', 'Express.js'],
-      icon: Ticket,
+      screenshot: '/Tixtra.png', // Reference to your screenshot in the public folder
       github: 'https://github.com/Sandy3559/Tixtra',
       live: null,
       gradient: 'from-card-dark/50 to-olive-dark/30'
@@ -68,7 +68,7 @@ const Projects = () => {
             Featured Projects
           </h2>
           <p className="section-subtitle text-secondary-gray max-w-2xl mx-auto">
-            A showcase of my technical skills and problem-solving abilities through 
+            A showcase of my technical skills and problem-solving abilities through
             real-world applications that make a meaningful impact.
           </p>
         </motion.div>
@@ -85,7 +85,7 @@ const Projects = () => {
             >
               <div className="project-card">
                 <div className="grid lg:grid-cols-2 gap-8 items-center">
-                  {/* Project Image/Icon Section */}
+                  {/* Project Image Section */}
                   <motion.div
                     whileHover={{ scale: 1.02 }}
                     className={`project-card-image bg-gradient-to-br ${project.gradient} relative overflow-hidden`}
@@ -97,14 +97,18 @@ const Projects = () => {
                     >
                       <Sparkles className="text-lime-primary opacity-60" size={24} />
                     </motion.div>
-                    
+
                     <motion.div
-                      whileHover={{ scale: 1.1, rotate: 5 }}
-                      className="w-24 h-24 bg-lime-primary/20 rounded-full flex items-center justify-center border-2 border-lime-primary/30"
+                      whileHover={{ scale: 1.05 }}
+                      className="w-full h-full"
                     >
-                      <project.icon size={40} className="text-primary-lime" />
+                      <img
+                        src={project.screenshot}
+                        alt={`${project.title} screenshot`}
+                        className="w-full h-full object-cover"
+                      />
                     </motion.div>
-                    
+
                     <div className="absolute bottom-4 left-4 right-4">
                       <div className="text-xs text-secondary-gray opacity-75">
                         Project {index + 1} of {projects.length}
@@ -182,7 +186,7 @@ const Projects = () => {
                         <Github size={18} />
                         View Code
                       </motion.a>
-                      
+
                       {project.live && (
                         <motion.a
                           href={project.live}
