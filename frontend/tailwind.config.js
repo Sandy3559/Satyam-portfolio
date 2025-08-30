@@ -53,7 +53,6 @@ module.exports = {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			},
-        // Portfolio Design System Colors
         'page-dark': '#1a1c1b',
         'card-dark': '#302f2c',
         'primary-lime': '#d9fb06',

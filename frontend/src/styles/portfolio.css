@@ -1,29 +1,22 @@
-/* Pixel Pushers Design System - Portfolio Adaptation */
 
-/* Custom Properties - Exact Pixel Pushers Colors */
 :root {
-  /* Backgrounds */
   --bg-page: #1a1c1b;
   --bg-card: #302f2c;
   --bg-light: #dfddd6;
   
-  /* Text Colors */
   --text-primary: #d9fb06;
   --text-secondary: #888680;
   --text-muted: #302f2c;
   --text-inverse: #1a1c1b;
   
-  /* Borders */
   --border-light: rgba(63, 72, 22, 0.5);
   --border-medium: #3f4816;
   --border-strong: #888680;
   
-  /* Brand Colors */
   --brand-primary: #d9fb06;
   --brand-hover: rgba(217, 251, 6, 0.8);
   --brand-active: rgba(217, 251, 6, 0.6);
   
-  /* Supporting Colors */
   --secondary-olive: #3f4816;
   --secondary-yellow: #f8d47a;
   --secondary-blue: #0073e6;
@@ -55,7 +48,6 @@
   --secondary-blue: #0073e6;
 }
 
-/* Dynamic Theme Variables */
 body {
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -74,14 +66,12 @@ body {
   --current-text-secondary: var(--text-secondary);
 } 
 
-/* Typography System */
 body {
   font-family: 'Inter', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Impact Headlines */
 .hero-title {
   font-family: 'Inter', Arial, sans-serif;
   font-weight: 900;
@@ -91,7 +81,6 @@ body {
   letter-spacing: -0.02em;
 }
 
-/* Section Headlines */
 .section-title {
   font-family: 'Inter', Arial, sans-serif;
   font-weight: 900;
@@ -109,7 +98,6 @@ body {
   color: var(--text-secondary);
 }
 
-/* Body Text */
 .body-large {
   font-family: 'Inter', Arial, sans-serif;
   font-weight: 400;
@@ -144,7 +132,6 @@ body {
   letter-spacing: 0.1em;
 }
 
-/* Button System */
 .btn-primary {
   background: var(--brand-primary);
   color: var(--text-inverse);
@@ -207,7 +194,6 @@ body {
   transform: translateY(0);
 }
 
-/* Navigation Links */
 .nav-link {
   color: var(--text-primary);
   text-decoration: none;
@@ -223,7 +209,6 @@ body {
   color: var(--brand-hover);
 }
 
-/* Layout Sections */
 .hero-section {
   padding: 120px 0px 80px;
   background: var(--bg-page);
@@ -233,7 +218,6 @@ body {
   padding: 80px 0;
 }
 
-/* Card Components */
 .portfolio-card {
   background: var(--bg-card);
   border-radius: 12px;
@@ -248,7 +232,6 @@ body {
   border-color: var(--brand-primary);
 }
 
-/* Skill Tags */
 .skill-tag {
   background: var(--bg-card);
   color: var(--text-primary);
@@ -266,7 +249,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Project Cards */
 .project-card {
   background: var(--bg-card);
   border-radius: 16px;
@@ -295,7 +277,6 @@ body {
   padding: 1.5rem;
 }
 
-/* Contact Form */
 .form-input {
   background: var(--bg-card);
   border: 2px solid var(--border-medium);
@@ -317,7 +298,6 @@ body {
   color: var(--text-muted);
 }
 
-/* Animations */
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
@@ -327,7 +307,6 @@ body {
   animation: float 3s ease-in-out infinite;
 }
 
-/* Responsive Spacing */
 @media (max-width: 768px) {
   .hero-section {
     padding: 100px 0 60px;
@@ -352,7 +331,6 @@ body {
   }
 }
 
-/* Utility Classes */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -366,7 +344,6 @@ body {
   background-clip: text;
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }

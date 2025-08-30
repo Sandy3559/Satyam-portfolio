@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 body {
@@ -21,7 +20,6 @@ code {
         monospace;
 }
 
-/* Shadcn UI Variables */
 @layer base {
   :root {
         --background: 0 0% 100%;
@@ -87,7 +85,6 @@ code {
     }
 }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -105,12 +102,10 @@ code {
   background: #d9fb06;
 }
 
-/* Smooth Scrolling */
 html {
   scroll-behavior: smooth;
 }
 
-/* Custom Selection */
 ::selection {
   background-color: #d9fb06;
   color: #1a1c1b;
@@ -121,7 +116,6 @@ html {
   color: #1a1c1b;
 }
 
-/* Focus Styles */
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible,
@@ -130,7 +124,6 @@ a:focus-visible {
   outline-offset: 2px;
 }
 
-/* Animations */
 @keyframes gradient-shift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -142,7 +135,6 @@ a:focus-visible {
   animation: gradient-shift 3s ease infinite;
 }
 
-/* Loading Animation */
 @keyframes spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
@@ -152,7 +144,6 @@ a:focus-visible {
   animation: spin 3s linear infinite;
 }
 
-/* Glow Effect */
 .glow-effect {
   box-shadow: 0 0 20px rgba(217, 251, 6, 0.3);
   transition: box-shadow 0.3s ease;
