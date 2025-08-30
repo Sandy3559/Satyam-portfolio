@@ -23,8 +23,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Mock form submission
-    toast({
-      title: "Message Sent!",
+    toast.success("Message Sent!", {
       description: "Thanks for reaching out! I'll get back to you soon.",
     });
     setFormData({ name: '', email: '', subject: '', message: '' });
@@ -71,7 +70,7 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="section-subtitle text-secondary-gray max-w-2xl mx-auto">
-            Ready to collaborate on exciting projects or discuss opportunities? 
+            Ready to collaborate on exciting projects or discuss opportunities?
             I'd love to hear from you and explore how we can work together.
           </p>
         </motion.div>
@@ -90,9 +89,9 @@ const Contact = () => {
                 Let's Connect
               </h3>
               <p className="body-large text-secondary-gray mb-8">
-                I'm always open to discussing new opportunities, innovative projects, 
-                and potential collaborations. Whether you're looking for a fresh 
-                perspective on a technical challenge or want to explore new ideas, 
+                I'm always open to discussing new opportunities, innovative projects,
+                and potential collaborations. Whether you're looking for a fresh
+                perspective on a technical challenge or want to explore new ideas,
                 feel free to reach out!
               </p>
             </div>
@@ -203,7 +202,7 @@ const Contact = () => {
               <h3 className="text-2xl font-bold text-primary-lime mb-6">
                 Send a Message
               </h3>
-              
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <motion.div
@@ -221,9 +220,10 @@ const Contact = () => {
                       required
                       className="form-input w-full"
                       placeholder="Your name"
+                      autoComplete="name"
                     />
                   </motion.div>
-                  
+
                   <motion.div
                     whileFocus={{ scale: 1.02 }}
                   >
@@ -239,6 +239,7 @@ const Contact = () => {
                       required
                       className="form-input w-full"
                       placeholder="your.email@example.com"
+                      autoComplete="email"
                     />
                   </motion.div>
                 </div>
@@ -258,6 +259,7 @@ const Contact = () => {
                     required
                     className="form-input w-full"
                     placeholder="What's this about?"
+                    autoComplete="off"
                   />
                 </motion.div>
 
@@ -276,6 +278,7 @@ const Contact = () => {
                     rows={5}
                     className="form-input w-full resize-none"
                     placeholder="Tell me about your project or opportunity..."
+                    autoComplete="off"
                   />
                 </motion.div>
 
